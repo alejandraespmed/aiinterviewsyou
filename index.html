@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alejandra Espinal Medina — Sales Professional</title>
+<meta name="description" content="Alejandra Espinal Medina — sales professional working across retail sales, international business, data analytics and business intelligence (BI).">
+<meta name="theme-color" content="#020a18">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Alejandra Espinal Medina — Sales Professional">
+<meta property="og:description" content="Sales professional working across retail sales, international business, data analytics and business intelligence (BI).">
+<meta property="og:type" content="website">
+<!-- Replace with your real GitHub Pages URL, e.g. https://your-username.github.io/ -->
+<meta property="og:url" content="https://your-username.github.io/">
+<!-- Add og:image later: 1200x630 PNG matching dark theme -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Alejandra Espinal Medina — Sales Professional">
+<meta name="twitter:description" content="Sales professional working across retail sales, international business, data analytics and business intelligence (BI).">
+<meta name="twitter:url" content="https://your-username.github.io/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+  // Apply saved theme BEFORE first paint (no flash). Default = dark.
+  try {
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light');
+    }
+  } catch (e) {}
+</script>
+
+<style>
+  :root {
+    --bg: #020a18;
+    --bg-grad: linear-gradient(170deg, #020a18 0%, #041028 40%, #06142e 70%, #020a18 100%);
+    --surface: rgba(8,24,56,0.85);
+    --border: rgba(0,170,255,0.12);
+    --border-glow: rgba(0,170,255,0.3);
+    --text: #d0e0f0;
+    --text-bright: #e8f0ff;
+    --text-dim: #6888aa;
+    --neon: #00aaff;
+    --cyan: #00e5ff;
+    --green: #00ff88;
+    --amber: #ffaa00;
+    --red: #ff4466;
+    --purple: #aa66ff;
+    --header-bg: rgba(2,10,24,0.65);
+    --cta-text: #020a18;
+    --grid-opacity: 0.03;
+    --orb-opacity: 0.08;
+    color-scheme: dark;
+  }
+
+  html.light {
+    --bg: #f3f7fc;
+    --bg-grad: linear-gradient(170deg, #f8fbff 0%, #eaf1fb 45%, #f1f6fd 75%, #f8fbff 100%);
+    --surface: rgba(255,255,255,0.88);
+    --border: rgba(0,80,160,0.14);
+    --border-glow: rgba(0,112,214,0.35);
+    --text: #233650;
+    --text-bright: #0a1a33;
+    --text-dim: #566d8a;
+    --neon: #0070d6;
+    --cyan: #008fb3;
+    --green: #00995a;
+    --amber: #b36b00;
+    --red: #d6304f;
+    --purple: #7a3fd6;
+    --header-bg: rgba(243,247,252,0.72);
+    --cta-text: #ffffff;
+    --grid-opacity: 0.05;
+    --orb-opacity: 0.1;
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  a { color: var(--neon); text-decoration: none; transition: color .2s, text-shadow .2s; }
+  a:hover { color: var(--cyan); text-shadow: 0 0 12px var(--border-glow); }
+  :focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; border-radius: 6px; }
+
+  /* ---------- Background depth ---------- */
+  .bg-layer { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .bg-gradient { background: var(--bg-grad); }
+  .bg-grid {
+    opacity: var(--grid-opacity);
+    background-image:
+      linear-gradient(var(--neon) 1px, transparent 1px),
+      linear-gradient(90deg, var(--neon) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(100px);
+    opacity: var(--orb-opacity);
+    animation: orbit var(--dur) linear infinite;
+  }
+  /* Orbs sit in the gutters, outside the 880px content column */
+  .orb-1 { --dur: 42s; --r: 40px; width: 460px; height: 460px; top: 6%;  right: calc(50% + 480px); background: radial-gradient(circle, var(--neon) 0%, transparent 70%); }
+  .orb-2 { --dur: 56s; --r: 40px; width: 520px; height: 520px; top: 34%; left: calc(50% + 480px);  background: radial-gradient(circle, var(--purple) 0%, transparent 70%); animation-direction: reverse; }
+  .orb-3 { --dur: 48s; --r: 40px; width: 400px; height: 400px; bottom: -4%; right: calc(50% + 480px); background: radial-gradient(circle, var(--cyan) 0%, transparent 70%); }
+  @keyframes orbit {
+    from { transform: rotate(0deg)   translateX(var(--r)) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(var(--r)) rotate(-360deg); }
+  }
+  @media (max-width: 960px) { .orb { display: none; } }
+
+  /* ---------- Header ---------- */
+  header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--header-bg);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header-inner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .brand { font-weight: 700; color: var(--text-bright); letter-spacing: -0.01em; font-size: 1rem; }
+  .header-actions { display: flex; gap: 8px; }
+  .icon-btn {
+    width: 38px; height: 38px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color .2s, color .2s, box-shadow .2s;
+  }
+  .icon-btn:hover { border-color: var(--border-glow); color: var(--cyan); box-shadow: 0 0 14px var(--border-glow); }
+  .icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* theme icons: sun shown in dark (switch to light), moon shown in light */
+  .icon-moon { display: none; }
+  html.light .icon-sun { display: none; }
+  html.light .icon-moon { display: block; }
+  /* collapse-all icons */
+  #toggleAll .icon-expand { display: none; }
+  #toggleAll[data-state="closed"] .icon-collapse { display: none; }
+  #toggleAll[data-state="closed"] .icon-expand { display: block; }
+
+  /* ---------- Layout ---------- */
+  .content-layer { position: relative; z-index: 1; }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 72px 0 48px; }
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 7vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--text-bright);
+  }
+  .hero .role {
+    margin: 14px 0 0;
+    font-size: clamp(1rem, 2.4vw, 1.2rem);
+    font-weight: 600;
+    color: var(--neon);
+  }
+  .hero .statement {
+    margin: 28px 0 0;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text-bright);
+  }
+  .inferred {
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--text-dim);
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 13px 28px;
+    background: var(--neon);
+    color: var(--cta-text);
+    font-weight: 600;
+    border-radius: 12px;
+    border: 1px solid var(--border-glow);
+    box-shadow: 0 0 24px var(--border);
+    transition: background .2s, box-shadow .2s, transform .2s;
+  }
+  .cta:hover { background: var(--cyan); color: var(--cta-text); text-shadow: none; box-shadow: 0 0 28px var(--border-glow); transform: translateY(-1px); }
+
+  /* ---------- Sections ---------- */
+  .sec {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-bottom: 14px;
+    transition: border-color .25s;
+  }
+  .sec.open { border-color: var(--border-glow); }
+  .sec-head {
+    width: 100%;
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 18px;
+    background: none; border: 0;
+    font: inherit; color: var(--text-bright);
+    text-align: left; cursor: pointer;
+  }
+  .num {
+    flex: 0 0 auto;
+    width: 32px; height: 32px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1.5px solid var(--neon);
+    border-radius: 50%;
+    color: var(--neon);
+    font-size: .9rem; font-weight: 700;
+  }
+  .sec-title { flex: 1; font-size: 1.1rem; font-weight: 600; letter-spacing: -0.01em; }
+  .pm { position: relative; width: 16px; height: 16px; flex: 0 0 auto; }
+  .pm::before, .pm::after {
+    content: ""; position: absolute; left: 0; top: 50%;
+    width: 100%; height: 2px; margin-top: -1px;
+    background: var(--text-dim); border-radius: 2px;
+    transition: transform .3s ease, background .2s;
+  }
+  .pm::after { transform: rotate(90deg); }
+  .sec.open .pm::after { transform: rotate(0deg); }
+  .sec-head:hover .pm::before, .sec-head:hover .pm::after { background: var(--cyan); }
+
+  .sec-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition: grid-template-rows .35s ease, visibility .35s;
+  }
+  .sec.open .sec-body { grid-template-rows: 1fr; visibility: visible; }
+  .sec-inner { overflow: hidden; min-height: 0; }
+  .sec-pad { padding: 2px 20px 22px 64px; opacity: 0; transition: opacity .3s ease; }
+  .sec.open .sec-pad { opacity: 1; }
+  @media (max-width: 560px) { .sec-pad { padding-left: 20px; } }
+  .sec-pad p { margin: 0 0 12px; }
+  .sec-pad p:last-child { margin-bottom: 0; }
+  .label { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-dim); margin: 18px 0 8px; }
+  .label:first-child { margin-top: 0; }
+  .sec-pad ul { margin: 0; padding-left: 20px; }
+  .sec-pad li { margin-bottom: 6px; }
+  .sec-pad li::marker { color: var(--neon); }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 4px; }
+  .card {
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--neon);
+    border-radius: 12px;
+    color: var(--text-bright);
+    font-weight: 600;
+    background: rgba(0,170,255,0.04);
+  }
+  .card:nth-child(2) { border-left-color: var(--cyan); }
+  .card:nth-child(3) { border-left-color: var(--purple); }
+  .card:nth-child(4) { border-left-color: var(--green); }
+  .card small { display: block; margin-top: 2px; font-weight: 400; color: var(--text-dim); font-size: .85rem; }
+
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact strong { color: var(--text-bright); font-size: 1.1rem; }
+  .fact span { color: var(--text-dim); }
+
+  /* ---------- Footer ---------- */
+  footer { padding: 36px 0 48px; text-align: center; color: var(--text-dim); font-size: .85rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orb { animation: none; }
+    .sec-body, .sec-pad, .pm::before, .pm::after { transition: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Background layers, back to front -->
+<div class="bg-layer bg-gradient" aria-hidden="true"></div>
+<div class="bg-layer bg-grid" aria-hidden="true"></div>
+<div class="orb orb-1" aria-hidden="true"></div>
+<div class="orb orb-2" aria-hidden="true"></div>
+<div class="orb orb-3" aria-hidden="true"></div>
+
+<div class="content-layer">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="brand">Alejandra Espinal Medina</span>
+      <div class="header-actions">
+        <button class="icon-btn" id="toggleAll" type="button" title="Collapse all sections" aria-label="Collapse all sections" data-state="open">
+          <svg class="icon-collapse" viewBox="0 0 24 24" aria-hidden="true"><polyline points="7 4 12 9 17 4"/><polyline points="7 20 12 15 17 20"/></svg>
+          <svg class="icon-expand" viewBox="0 0 24 24" aria-hidden="true"><polyline points="7 9 12 4 17 9"/><polyline points="7 15 12 20 17 15"/></svg>
+        </button>
+        <button class="icon-btn" id="themeToggle" type="button" title="Switch to light mode" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero" aria-label="Introduction">
+      <h1>Alejandra Espinal Medina</h1>
+      <p class="role">Sales professional · Retail sales, international business, data analytics &amp; business intelligence</p>
+      <p class="statement">Sales professional connecting retail and international business with data. <span class="inferred" title="Inferred from your LinkedIn headline">[inferred]</span></p>
+      <a class="cta" href="https://www.linkedin.com/in/alejandra-espinal/" target="_blank" rel="noopener">Get in touch</a>
+    </section>
+
+    <section class="sec open" id="about">
+      <button class="sec-head" type="button" aria-expanded="true" aria-controls="body-1">
+        <span class="num">1</span><span class="sec-title">About me</span><span class="pm" aria-hidden="true"></span>
+      </button>
+      <div class="sec-body" id="body-1"><div class="sec-inner"><div class="sec-pad">
+        <p>Sales professional based in Peru, working across retail sales, international business, data analytics and business intelligence (BI).</p>
+        <p>I bring sales experience together with data analytics and business intelligence to support retail and international business. <span class="inferred" title="Inferred from your LinkedIn headline">[inferred]</span></p>
+        <div class="label">Signature work</div>
+        <ul>
+          <li>Sales professional at PUMA Group</li>
+          <li>Studied at Universidad de Lima</li>
+          <li>Work spans retail sales, international business, data analytics and BI</li>
+        </ul>
+      </div></div></div>
+    </section>
+
+    <section class="sec open" id="what-i-do">
+      <button class="sec-head" type="button" aria-expanded="true" aria-controls="body-2">
+        <span class="num">2</span><span class="sec-title">What I do: sales, data analytics and BI</span><span class="pm" aria-hidden="true"></span>
+      </button>
+      <div class="sec-body" id="body-2"><div class="sec-inner"><div class="sec-pad">
+        <div class="cards">
+          <div class="card">Retail sales</div>
+          <div class="card">International business</div>
+          <div class="card">Data analytics</div>
+          <div class="card">Business intelligence (BI)</div>
+        </div>
+      </div></div></div>
+    </section>
+
+    <section class="sec open" id="experience">
+      <button class="sec-head" type="button" aria-expanded="true" aria-controls="body-3">
+        <span class="num">3</span><span class="sec-title">Experience at PUMA Group</span><span class="pm" aria-hidden="true"></span>
+      </button>
+      <div class="sec-body" id="body-3"><div class="sec-inner"><div class="sec-pad">
+        <div class="fact">
+          <strong>PUMA Group</strong>
+          <span>Sales professional</span>
+        </div>
+      </div></div></div>
+    </section>
+
+    <section class="sec open" id="education">
+      <button class="sec-head" type="button" aria-expanded="true" aria-controls="body-4">
+        <span class="num">4</span><span class="sec-title">Education at Universidad de Lima</span><span class="pm" aria-hidden="true"></span>
+      </button>
+      <div class="sec-body" id="body-4"><div class="sec-inner"><div class="sec-pad">
+        <div class="fact">
+          <strong>Universidad de Lima</strong>
+          <span>Lima, Peru</span>
+        </div>
+      </div></div></div>
+    </section>
+
+    <section class="sec open" id="contact">
+      <button class="sec-head" type="button" aria-expanded="true" aria-controls="body-5">
+        <span class="num">5</span><span class="sec-title">Get in touch</span><span class="pm" aria-hidden="true"></span>
+      </button>
+      <div class="sec-body" id="body-5"><div class="sec-inner"><div class="sec-pad">
+        <p>Hire me or contact me for work. The best way to reach me is on LinkedIn:</p>
+        <p><a href="https://www.linkedin.com/in/alejandra-espinal/" target="_blank" rel="noopener">linkedin.com/in/alejandra-espinal</a></p>
+      </div></div></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year">2026</span> Alejandra Espinal Medina · Built with the AI Badge</div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  // ----- Year -----
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  // ----- Theme toggle -----
+  var themeBtn = document.getElementById('themeToggle');
+  function syncThemeUI() {
+    var light = root.classList.contains('light');
+    var label = light ? 'Switch to dark mode' : 'Switch to light mode';
+    themeBtn.title = label;
+    themeBtn.setAttribute('aria-label', label);
+  }
+  themeBtn.addEventListener('click', function () {
+    root.classList.toggle('light');
+    try { localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark'); } catch (e) {}
+    syncThemeUI();
+  });
+  syncThemeUI();
+
+  // ----- Collapsible sections -----
+  var secs = Array.prototype.slice.call(document.querySelectorAll('.sec'));
+  var allBtn = document.getElementById('toggleAll');
+
+  function setOpen(sec, open) {
+    sec.classList.toggle('open', open);
+    sec.querySelector('.sec-head').setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function syncAllUI() {
+    var allOpen = secs.every(function (s) { return s.classList.contains('open'); });
+    var label = allOpen ? 'Collapse all sections' : 'Expand all sections';
+    allBtn.dataset.state = allOpen ? 'open' : 'closed';
+    allBtn.title = label;
+    allBtn.setAttribute('aria-label', label);
+  }
+
+  secs.forEach(function (sec) {
+    sec.querySelector('.sec-head').addEventListener('click', function () {
+      setOpen(sec, !sec.classList.contains('open'));
+      syncAllUI();
+    });
+  });
+
+  allBtn.addEventListener('click', function () {
+    var allOpen = secs.every(function (s) { return s.classList.contains('open'); });
+    secs.forEach(function (s) { setOpen(s, !allOpen); });
+    syncAllUI();
+  });
+
+  syncAllUI();
+})();
+</script>
+</body>
+</html>
